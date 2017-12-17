@@ -10,6 +10,10 @@ class ga {
 		if( $GAClass->isLoggedIn() ) return false;
 		return true;
 	}
+    public static function anonymizeIp() {
+		$GAClass = new GAClass();
+        return $GAClass->anonymizeIp();
+	}
 }
 
 class GAClass {

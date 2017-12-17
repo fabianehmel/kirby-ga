@@ -7,7 +7,7 @@
 
   ga('create', '<?php echo c::get('plugin.ga.id'); ?>', 'auto');
   <?php if(ga::anonymizeIp()) : ?>
-    ga('set', 'anonymizeIp', true);
+  ga('set', 'anonymizeIp', true);
   <?php endif; ?>
   ga('send', 'pageview');
 </script>

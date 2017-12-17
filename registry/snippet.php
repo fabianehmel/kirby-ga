@@ -6,6 +6,9 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', '<?php echo c::get('plugin.ga.id'); ?>', 'auto');
+  <?php if(ga::anonymizeIp()) : ?>
+    ga('set', 'anonymizeIp', true);
+  <?php endif; ?>
   ga('send', 'pageview');
 </script>
 <?php else : ?>

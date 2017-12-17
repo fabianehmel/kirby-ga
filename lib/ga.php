@@ -25,6 +25,10 @@ class GAClass {
 		return c::get('plugin.ga.debug', false);
 	}
 
+    public function anonymizeIp() {
+		return c::get('plugin.ga.anonymizeIp', false);
+	}
+
 	public function ua() {
 		return c::get('plugin.ga.id', false);
 	}
